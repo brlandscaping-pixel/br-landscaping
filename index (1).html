@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="BR Landscaping — professional landscaping and lawn care services.">
+<title>BR Landscaping | Quality Landscaping Services</title>
+<style>
+:root {
+  --green:#0b3d20;
+  --green2:#1f7a35;
+  --lime:#4da92c;
+  --cream:#f5f7f2;
+  --dark:#102017;
+  --white:#fff;
+  --shadow:0 18px 45px rgba(8,45,23,.12);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--dark);line-height:1.6;background:var(--white)}
+a{color:inherit;text-decoration:none}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid #e7ece8}
+.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900;color:var(--green);font-size:1.15rem}
+.brand img{width:58px;height:58px;object-fit:contain}
+.navlinks{display:flex;gap:26px;font-weight:700;color:#284233}
+.navlinks a:hover{color:var(--green2)}
+.call{background:var(--green);color:white;padding:12px 18px;border-radius:999px;font-weight:800;white-space:nowrap}
+.call:hover{background:var(--green2)}
+.hero{min-height:680px;display:grid;place-items:center;position:relative;overflow:hidden;background:
+linear-gradient(110deg,rgba(5,34,18,.93),rgba(13,78,34,.76)),
+radial-gradient(circle at 80% 20%,rgba(77,169,44,.55),transparent 35%),
+linear-gradient(135deg,#0b3d20,#173d26)}
+.hero:after{content:"";position:absolute;inset:auto -5% -90px;height:180px;background:var(--white);border-radius:50% 50% 0 0/100% 100% 0 0}
+.hero-content{position:relative;z-index:2;color:#fff;padding:80px 0 120px;max-width:850px;text-align:center}
+.kicker{letter-spacing:.18em;text-transform:uppercase;font-weight:800;color:#bce79d;margin-bottom:15px}
+h1{font-size:clamp(3rem,7vw,5.8rem);line-height:.98;letter-spacing:-.05em;margin-bottom:22px}
+.hero p{font-size:clamp(1.05rem,2vw,1.3rem);max-width:680px;margin:0 auto 34px;color:#edf7ef}
+.buttons{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+.btn{padding:14px 22px;border-radius:999px;font-weight:900;display:inline-block}
+.btn-primary{background:#63c43a;color:#092611}
+.btn-secondary{border:2px solid rgba(255,255,255,.7);color:white}
+.section{padding:90px 0}
+.section-head{text-align:center;max-width:700px;margin:0 auto 48px}
+.eyebrow{color:var(--green2);font-weight:900;text-transform:uppercase;letter-spacing:.14em;font-size:.82rem}
+h2{font-size:clamp(2rem,4vw,3.3rem);line-height:1.08;margin:10px 0 14px;color:var(--green)}
+.section-head p{color:#607066}
+.services{background:var(--cream)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:white;padding:30px;border-radius:20px;box-shadow:var(--shadow);border:1px solid #e6ece7}
+.icon{width:52px;height:52px;border-radius:15px;background:#e9f5e4;color:var(--green2);display:grid;place-items:center;font-size:1.5rem;margin-bottom:20px}
+.card h3{color:var(--green);margin-bottom:8px;font-size:1.2rem}
+.card p{color:#647067;font-size:.95rem}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.about-panel{background:linear-gradient(145deg,#0b3d20,#245f30);min-height:390px;border-radius:28px;padding:38px;display:flex;align-items:flex-end;color:white;box-shadow:var(--shadow)}
+.about-panel strong{font-size:2.2rem;line-height:1.05}
+.checks{display:grid;gap:14px;margin-top:25px}
+.check{display:flex;gap:10px;align-items:flex-start}
+.check b{color:var(--green2)}
+.cta{background:var(--green);color:white;text-align:center}
+.cta h2{color:white}
+.cta p{max-width:650px;margin:0 auto 28px;color:#dceee0}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.contact-card{padding:34px;border-radius:22px;background:var(--cream);border:1px solid #e0e8e1}
+.contact-card h3{color:var(--green);margin-bottom:8px}
+.contact-link{font-size:1.15rem;font-weight:800;color:var(--green2);word-break:break-word}
+footer{background:#071f11;color:#b8c8bd;padding:28px 0}
+.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer strong{color:white}
+@media(max-width:850px){
+  .navlinks{display:none}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .about,.contact-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .call{padding:10px 13px;font-size:.9rem}
+  .grid{grid-template-columns:1fr}
+  .section{padding:70px 0}
+  .hero{min-height:610px}
+  .brand img{width:48px;height:48px}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#top">
+      <img src="br-landscaping-logo.png" alt="BR Landscaping logo">
+      <span>BR LANDSCAPING</span>
+    </a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="call" href="tel:2243376284">Call 224-337-6284</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="container hero-content">
+    <div class="kicker">BR Landscaping</div>
+    <h1>Make Your Outdoors Stand Out.</h1>
+    <p>Professional landscaping and property care with attention to detail, clean work, and a finished look you can be proud of.</p>
+    <div class="buttons">
+      <a class="btn btn-primary" href="tel:2243376284">Get a Free Quote</a>
+      <a class="btn btn-secondary" href="#services">Explore Services</a>
+    </div>
+  </div>
+</section>
+
+<section class="section services" id="services">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">What we do</div>
+      <h2>Landscaping made simple.</h2>
+      <p>From routine property care to refreshing your outdoor space, BR Landscaping is built around quality work and dependable service.</p>
+    </div>
+    <div class="grid">
+      <article class="card"><div class="icon">✦</div><h3>Lawn Care</h3><p>Keep your lawn looking clean, healthy, and well maintained throughout the season.</p></article>
+      <article class="card"><div class="icon">⌁</div><h3>Landscape Maintenance</h3><p>Regular outdoor care to keep beds, edges, and surrounding areas looking their best.</p></article>
+      <article class="card"><div class="icon">✿</div><h3>Seasonal Cleanups</h3><p>Refresh your property and clear away seasonal debris for a neat finished appearance.</p></article>
+      <article class="card"><div class="icon">◆</div><h3>Mulch & Bed Care</h3><p>Give planting areas a polished look with clean, defined beds and fresh landscape materials.</p></article>
+      <article class="card"><div class="icon">❄</div><h3>Snow Plowing</h3><p>Reliable snow removal to help keep driveways, parking areas, and properties clear during winter.</p></article>
+      <article class="card"><div class="icon">❧</div><h3>Leaf Removal</h3><p>Clear fallen leaves from lawns and outdoor areas to keep your property clean and ready for the season.</p></article>
+      <article class="card"><div class="icon">⌂</div><h3>Gutter Cleaning</h3><p>Remove leaves and debris from gutters to help keep your home's drainage system flowing properly.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="container about">
+    <div class="about-panel">
+      <strong>Clean work.<br>Strong results.<br>Better curb appeal.</strong>
+    </div>
+    <div>
+      <div class="eyebrow">Why BR Landscaping</div>
+      <h2>Your property deserves attention to detail.</h2>
+      <p>We focus on dependable communication, careful workmanship, and leaving your outdoor space looking noticeably better.</p>
+      <div class="checks">
+        <div class="check"><b>✓</b><span>Professional, clean presentation</span></div>
+        <div class="check"><b>✓</b><span>Attention to the details that matter</span></div>
+        <div class="check"><b>✓</b><span>Easy way to request a quote</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section cta">
+  <div class="container">
+    <div class="eyebrow" style="color:#bce79d">Ready to get started?</div>
+    <h2>Let's improve your outdoor space.</h2>
+    <p>Call or email BR Landscaping to discuss your project and get started.</p>
+    <div class="buttons">
+      <a class="btn btn-primary" href="tel:2243376284">224-337-6284</a>
+      <a class="btn btn-secondary" href="mailto:brlandscaping@brlanscaping.com">Email BR Landscaping</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Contact</div>
+      <h2>Let's talk about your property.</h2>
+      <p>Reach out directly for questions, project details, or a quote.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card"><h3>Phone</h3><a class="contact-link" href="tel:2243376284">224-337-6284</a></div>
+      <div class="contact-card"><h3>Email</h3><a class="contact-link" href="mailto:brlandscaping@brlanscaping.com">brlandscaping@brlanscaping.com</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <div><strong>BR Landscaping</strong><br>Quality landscaping & property care.</div>
+    <div>© 2026 BR Landscaping. All rights reserved.</div>
+  </div>
+</footer>
+</body>
+</html>
